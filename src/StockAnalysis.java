@@ -1,5 +1,3 @@
-// import java.util.Arrays;
-
 import java.util.ArrayList;
 
 public class StockAnalysis {
@@ -27,18 +25,26 @@ public class StockAnalysis {
     // Find the maximum stock price
     // The method takes the array of stock prices as input and returns the maximum price among all the stocks
     public float findMaximumPrice() {
-        // Sorting
-        // Arrays.sort(stockPricesArray);
-        // return stockPricesArray[stockPricesArrayLength - 1];
-
         // Iterative Way
         float maxPrice = stockPricesArray[0];
         for (int i = 0; i < stockPricesArrayLength; i++) {
-            if (stockPricesArray[i] > maxPrice) {
-                maxPrice = stockPricesArray[i];
+            float currPrice = stockPricesArray[i];
+            if (currPrice > maxPrice) {
+                maxPrice = currPrice;
             }
         }
         return maxPrice;
+
+        // Sorting
+//        Arrays.sort(stockPricesArray);
+//        return stockPricesArray[stockPricesArrayLength - 1];
+
+        // Using Collections.max()
+//        ArrayList<Float> list = new ArrayList<>();
+//        for (float price : stockPricesArray) {
+//            list.add(price);
+//        }
+//        return Collections.max(list);
     }
 
     // Determine the occurrence count of a specific price
