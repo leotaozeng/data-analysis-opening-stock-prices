@@ -10,6 +10,7 @@ public class Main {
         // Initialize an ArrayList with 10 days of opening stock prices
         ArrayList<Float> stockPricesList = new ArrayList<>(Arrays.asList(100.5f, 102.3f, 101.0f, 12.3f, 118.4f, 104.1f, 105.0f, 106.2f, 102.5f, 12.3f));
 
+        // Create an object of StockAnalysis class
         StockAnalysis obj = new StockAnalysis(stockPricesArray, stockPricesList);
 
         // Generate a random number between 0 and 9
