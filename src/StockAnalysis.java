@@ -39,6 +39,13 @@ public class StockAnalysis {
 
     // Determine the occurrence count of a specific price
     // The method takes the array of stock prices and a target price as input and returns the number of times the target price occurs in the array
-    public void countOccurrences(float targetPrice) {
+    public int countOccurrences(float targetPrice) {
+        int count = 0;
+        for (float stockPrice : stockPrices) {
+            if (stockPrice == targetPrice) {
+                count++;
+            }
+        }
+        return count;
     }
 }
