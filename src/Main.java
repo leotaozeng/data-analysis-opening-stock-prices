@@ -15,5 +15,6 @@ public class Main {
 
         // Initialize the array with 10 days of opening stock prices
         float[] openingPrices = {100.5f, 102.3f, 101.0f, 99.8f, 103.4f, 104.1f, 105.0f, 106.2f, 102.5f, 101.3f};
+        StockAnalysis.calculateAveragePrice(openingPrices);
     }
 }
