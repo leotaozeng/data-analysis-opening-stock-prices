@@ -4,6 +4,7 @@ public class StockAnalysis {
     private final float[] stockPrices;
     private final int stockPricesLength;
 
+    // Parameterized Constructor
     public StockAnalysis(float[] stockPrices) {
         this.stockPrices = stockPrices;
         this.stockPricesLength = stockPrices.length;
@@ -38,6 +39,6 @@ public class StockAnalysis {
 
     // Determine the occurrence count of a specific price
     // The method takes the array of stock prices and a target price as input and returns the number of times the target price occurs in the array
-    public void countOccurrences() {
+    public void countOccurrences(float targetPrice) {
     }
 }
