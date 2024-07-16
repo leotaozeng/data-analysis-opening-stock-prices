@@ -25,8 +25,25 @@ public class Main {
         System.out.println("The target stock price is " + stockPricesArray[randomNum] + ", which occurs " +  obj.countOccurrences(stockPricesArray[randomNum]) + " times");
         System.out.println("The cumulative sum of stock prices is " + obj.computeCumulativeSum());
 
+        System.out.println();
+        System.out.println("The current ArrayList of stock prices is: " + stockPricesList);
+        System.out.println("How many does the ArrayList of stock prices have: " + obj.stockPricesList.size());
+        System.out.println();
+
         obj.insert_back(29.3f);
         obj.insert_back(143.2f);
-        System.out.println("The current ArrayList of stock prices is: " + stockPricesList);
+        System.out.println("After insert_back: " + stockPricesList);
+        System.out.println("How many does the ArrayList of stock prices have: " + obj.stockPricesList.size());
+        System.out.println();
+
+        obj.insert_front(10.2f);
+        obj.insert_front(42.82f);
+        System.out.println("After insert_front: " + stockPricesList);
+        System.out.println("How many does the ArrayList of stock prices have: " + obj.stockPricesList.size());
+        System.out.println();
+
+        obj.insert_at(2, 65.78f);
+        System.out.println("After insert_at: " + stockPricesList);
+        System.out.println("How many does the ArrayList of stock prices have: " + obj.stockPricesList.size());
     }
 }

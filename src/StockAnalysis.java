@@ -1,9 +1,9 @@
 import java.util.ArrayList;
 
 public class StockAnalysis {
-    private final ArrayList<Float> stockPricesList;
-    private final float[] stockPricesArray;
-    private final int stockPricesArrayLength;
+    final ArrayList<Float> stockPricesList;
+    final float[] stockPricesArray;
+    final int stockPricesArrayLength;
 
     // Parameterized Constructor
     public StockAnalysis(float[] stockPricesArray, ArrayList<Float> stockPricesList) {
@@ -28,9 +28,14 @@ public class StockAnalysis {
     }
 
     // Insert a stock price to the front of the ArrayList
-    public void insert_front(float stockPrice) {}
+    public void insert_front(float stockPrice) {
+        stockPricesList.addFirst(stockPrice);
+    }
 
-    public void insert_at() {}
+    // Insert a stock price at a specific position in the ArrayList
+    public void insert_at(int index, float stockPrice) {
+        stockPricesList.add(index, stockPrice);
+    }
 
     // Calculate the average stock price
     // The method takes the array of stock prices as input and returns the average price of the stocks
