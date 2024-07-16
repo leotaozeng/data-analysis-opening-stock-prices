@@ -17,6 +17,7 @@ public class Main {
         Random rand = new Random();
         int randomNum = rand.nextInt(10);
 
+        System.out.println("Is the array of stock prices empty? " + obj.isStockPricesArrayEmpty());
         System.out.println("The average stock price is: " + obj.calculateAveragePrice());
         System.out.println("The maximum stock price is: " + obj.findMaximumPrice());
         System.out.println("The target stock price is " + stockPricesArray[randomNum] + ", which occurs " +  obj.countOccurrences(stockPricesArray[randomNum]) + " times");

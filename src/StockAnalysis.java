@@ -12,6 +12,11 @@ public class StockAnalysis {
         this.stockPricesArrayLength = stockPricesArray.length;
     }
 
+    // Check if the array of stock prices is empty
+    public boolean isStockPricesArrayEmpty() {
+        return stockPricesArrayLength == 0;
+    }
+
     // Calculate the average stock price
     // The method takes the array of stock prices as input and returns the average price of the stocks
     public float calculateAveragePrice() {
