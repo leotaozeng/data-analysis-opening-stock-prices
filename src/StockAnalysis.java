@@ -12,10 +12,25 @@ public class StockAnalysis {
         this.stockPricesArrayLength = stockPricesArray.length;
     }
 
-    // Check if the array of stock prices is empty
+    // Check if the Array of stock prices is empty
     public boolean isStockPricesArrayEmpty() {
         return stockPricesArrayLength == 0;
     }
+
+    // Check if the ArrayList of stock prices is empty
+    public boolean isStockPricesListEmpty() {
+        return stockPricesList.isEmpty();
+    }
+
+    // Insert a stock price to the back of the ArrayList
+    public void insert_back(float stockPrice) {
+        stockPricesList.add(stockPrice);
+    }
+
+    // Insert a stock price to the front of the ArrayList
+    public void insert_front(float stockPrice) {}
+
+    public void insert_at() {}
 
     // Calculate the average stock price
     // The method takes the array of stock prices as input and returns the average price of the stocks
