@@ -23,18 +23,30 @@ public class StockAnalysis {
     }
 
     // Insert a stock price to the back of the ArrayList
-    public void insert_back(float stockPrice) {
+    public void insertBack(float stockPrice) {
         stockPricesList.add(stockPrice);
     }
 
     // Insert a stock price to the front of the ArrayList
-    public void insert_front(float stockPrice) {
+    public void insertFront(float stockPrice) {
         stockPricesList.addFirst(stockPrice);
     }
 
     // Insert a stock price at a specific position in the ArrayList
-    public void insert_at(int index, float stockPrice) {
+    public void insertAt(int index, float stockPrice) {
         stockPricesList.add(index, stockPrice);
+    }
+
+    // Remove a stock price from the front of the ArrayList
+    // an O of n operation / O(n)
+    public void removeFront() {
+        stockPricesList.removeFirst();
+    }
+
+    // Remove a stock price from the back of the ArrayList
+    // an O of 1 operation / O(1)
+    public void removeBack() {
+        stockPricesList.removeLast();
     }
 
     // Calculate the average stock price
